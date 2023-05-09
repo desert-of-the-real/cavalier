@@ -46,32 +46,44 @@ window.addEventListener('keydown', (event) => {
   switch (event.key) {
     case 'a':
       playNote('1');
+      animateFingers('1');
       break;
     case 's':
       playNote('2');
+      animateFingers('2');
       break;
     case 'd':
       playNote('3');
+      animateFingers('3');
       break;
     case 'f':
       playNote('4');
+      animateFingers('4');
       break;
     case 'g':
       playNote('5');
+      animateFingers('5');
       break;
     case 'h':
       playNote('6');
+      animateFingers('6');
       break;
     case 'j':
       playNote('7');
+      animateFingers('7');
       break;
     case 'k':
       playNote('8');
+      animateFingers('8');
       break;
-    // ...
+
     default:
       break;
   }
+});
+
+window.addEventListener('keyup', (event) => {
+  defaultFingers()
 });
 
 function enableAudio() {
